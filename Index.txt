@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kieona Antoinette | Intimacy, Identity, & Refinement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandIvory: '#F8F5F0',
+                        brandBeige: '#E9E1D8',
+                        brandTaupe: '#D8CFC4',
+                        brandGold: '#C6A85E',
+                        brandBrown: '#3A2E2A',
+                        brandCharcoal: '#1E1E1E',
+                        brandBlush: '#F3EAE3',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F5F0;
+            color: #1E1E1E;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .gold-border {
+            border-bottom: 2px solid #C6A85E;
+        }
+        .btn-shadow {
+            box-shadow: 0 4px 14px 0 rgba(58, 46, 42, 0.15);
+        }
+    </style>
+</head>
+<body class="selection:bg-brandGold selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-brandIvory/90 backdrop-blur-md border-b border-brandTaupe/30">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl tracking-widest uppercase font-light text-brandBrown serif-font">
+                Kieona <span class="font-bold">Antoinette</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase text-brandBrown">
+                <a href="#about" class="hover:text-brandGold transition">About</a>
+                <a href="#pillars" class="hover:text-brandGold transition">Pillars</a>
+                <a href="#framework" class="hover:text-brandGold transition">The Framework</a>
+                <a href="#blueprint" class="hover:text-brandGold transition">The Blueprint</a>
+                <a href="#connect" class="hover:text-brandGold transition">Connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center pt-20 px-6 md:px-12 bg-brandIvory">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8 fade-in">
+                <span class="text-brandGold uppercase tracking-[0.3em] text-xs font-semibold">Welcome to the Refined Life</span>
+                <h1 class="text-5xl md:text-7xl text-brandBrown leading-tight">
+                    Step Into the Woman <br><i class="italic">God Created</i> You to Be
+                </h1>
+                <p class="text-lg text-brandBrown/80 leading-relaxed max-w-lg">
+                    Grow in intimacy with God, walk confidently in your identity, and embody biblical femininity with elegance, discipline, and purpose.
+                </p>
+                <div class="pt-2">
+                    <a href="#about" class="inline-block bg-brandBrown text-brandIvory px-8 py-4 rounded-full tracking-widest uppercase text-sm hover:bg-brandCharcoal transition duration-300 btn-shadow">
+                        Start Your Journey
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center fade-in" style="animation-delay: 0.3s;">
+                <div class="w-full max-w-md aspect-[3/4] rounded-2xl overflow-hidden border-[10px] border-white shadow-2xl bg-brandBlush relative">
+                    <img src="https://i.postimg.cc/C1PWKF2P/image0.png" alt="Kieona Antoinette - Portrait" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x800/F3EAE3/3A2E2A?text=Kieona+Antoinette'">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-brandGold p-8 hidden md:block rounded-tr-3xl shadow-xl">
+                    <p class="text-white text-sm italic serif-font leading-relaxed max-w-[200px]">
+                        "Refinement is the outward evidence of an inward transformation."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POSITIONING SECTION -->
+    <section class="py-24 bg-brandBeige flex flex-col items-center text-center px-6 border-b border-brandTaupe/30">
+        <div class="max-w-3xl space-y-6">
+            <h2 class="text-brandGold text-3xl md:text-5xl">You Don’t Need More Motivation</h2>
+            <div class="h-px w-24 bg-brandGold mx-auto"></div>
+            <h3 class="text-4xl md:text-6xl text-brandBrown italic py-2">You Need Transformation.</h3>
+            <p class="text-lg text-brandBrown/80 leading-loose">
+                Kieona Antoinette is a Christ-centered brand devoted to helping women build a real relationship with God, walk in their true identity, and become refined in every area of life.
+            </p>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: ABOUT KIEONA ANTOINETTE -->
+    <section id="about" class="py-32 px-6 bg-brandIvory border-b border-brandTaupe/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-12 gap-12 lg:gap-20 items-center">
+                
+                <div class="md:col-span-5 relative">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-brandBlush via-brandIvory to-brandBeige rounded-2xl -rotate-1 scale-95 opacity-80 border border-brandGold/30"></div>
+                    <div class="absolute -top-6 -left-6 text-brandGold text-4xl font-light opacity-50 serif-font">✦</div>
+                    
+                    <div class="relative bg-white p-4 rounded-2xl shadow-xl border border-brandTaupe/20">
+                        <div class="aspect-[3/4] overflow-hidden rounded-xl bg-brandBlush">
+                            <img src="https://i.postimg.cc/NjCTbSWF/20250428-185832000-i-OS.jpg" alt="Kieona Antoinette" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/700x900/F3EAE3/3A2E2A?text=Kieona+Antoinette'">
+                        </div>
+                        <div class="mt-4 text-center">
+                            <span class="text-brandGold uppercase tracking-[0.2em] text-[10px] font-bold">Christian Mentor & Etiquette Educator</span>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute -bottom-6 -right-6 text-brandGold text-4xl font-light opacity-50 serif-font">◈</div>
+                </div>
+
+                <div class="md:col-span-7 space-y-8">
+                    <div class="space-y-3">
+                        <span class="text-brandGold tracking-[0.4em] uppercase text-xs block">The Heart Behind the Brand</span>
+                        <h2 class="text-4xl md:text-5xl text-brandBrown leading-tight">Meet Kieona Antoinette</h2>
+                        <div class="w-20 h-[1px] bg-brandGold"></div>
+                    </div>
+
+                    <div class="space-y-6 text-brandBrown/90 text-md leading-relaxed font-light">
+                        <p class="font-normal text-brandBrown text-lg">
+                            Kieona Antoinette is a Christian mentor, etiquette educator, and founder passionate about helping women deepen their relationship with God and become who He created them to be.
+                        </p>
+                        <p>
+                            Through biblical teachings, intentional living, and personal refinement, she equips women to grow spiritually while embracing confidence, discipline, and purpose.
+                        </p>
+                        <p>
+                            Her work centers on the belief that true transformation begins internally through intimacy with God and is reflected externally in the way a woman carries herself, serves others, and navigates life with wisdom and grace. By gracefully incorporating faith, identity, and elegance into daily life, Kieona creates nurturing spaces where women are encouraged to mature spiritually while cultivating poise, character, and self-respect.
+                        </p>
+                        <p class="italic text-brandGold serif-font font-semibold">
+                            "By gracefully incorporating faith, identity, and elegance into daily life, Kieona creates nurturing spaces where women are encouraged to mature spiritually while cultivating poise, character, and self-respect."
+                        </p>
+                        <p>
+                            Through devotionals, teachings, digital resources, and mentorship, Kieona Antoinette is building a Christ-centered brand devoted to helping women walk boldly in their God-given identity and embody biblical femininity in everyday life.
+                        </p>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://calendly.com/kieonaantoinette/15-minute-tea-talk" target="_blank" rel="noopener noreferrer" class="inline-block bg-brandBrown text-brandIvory px-8 py-4 rounded-full tracking-widest text-xs uppercase hover:bg-brandCharcoal transition duration-300 btn-shadow">
+                            Schedule a Tea & Talk with Kieona
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PILLARS -->
+    <section id="pillars" class="py-32 px-6 bg-brandIvory border-b border-brandTaupe/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 space-y-3">
+                <span class="text-brandGold tracking-[0.4em] uppercase text-xs block">Foundational Anchors</span>
+                <h2 class="text-4xl md:text-5xl text-brandBrown">The Core Pillars</h2>
+                <div class="w-12 h-[2px] bg-brandGold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-0 border border-brandTaupe/40 divide-y md:divide-y-0 md:divide-x divide-brandTaupe/40 bg-white shadow-sm">
+                
+                <div class="p-10 md:p-14 space-y-8 flex flex-col justify-between hover:bg-brandIvory/35 transition duration-500 group">
+                    <div class="space-y-6">
+                        <div class="text-brandGold text-5xl md:text-6xl font-light tracking-wide serif-font">01.</div>
+                        <div class="space-y-2">
+                            <span class="text-brandGold tracking-widest text-[10px] uppercase font-bold block">First Anchor</span>
+                            <h4 class="text-2xl text-brandBrown uppercase tracking-wider">Intimacy with God</h4>
+                        </div>
+                        <p class="text-brandBrown/70 leading-relaxed text-sm">
+                            Develop a consistent, disciplined relationship with God through deep prayer, word study, and unwavering spiritual growth.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-brandTaupe/20 flex items-center justify-between text-brandBrown group-hover:text-brandGold transition">
+                        <span class="text-xs uppercase tracking-widest font-medium">Cultivate Devotion</span>
+                        <span class="text-brandGold">♦</span>
+                    </div>
+                </div>
+
+                <div class="p-10 md:p-14 space-y-8 flex flex-col justify-between hover:bg-brandIvory/35 transition duration-500 group">
+                    <div class="space-y-6">
+                        <div class="text-brandGold text-5xl md:text-6xl font-light tracking-wide serif-font">02.</div>
+                        <div class="space-y-2">
+                            <span class="text-brandGold tracking-widest text-[10px] uppercase font-bold block">Second Anchor</span>
+                            <h4 class="text-2xl text-brandBrown uppercase tracking-wider">Identity in Christ</h4>
+                        </div>
+                        <p class="text-brandBrown/70 leading-relaxed text-sm">
+                            Discover who you are as a daughter of God and walk boldly in that truth, completely unshaken by the demands of the world.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-brandTaupe/20 flex items-center justify-between text-brandBrown group-hover:text-brandGold transition">
+                        <span class="text-xs uppercase tracking-widest font-medium">Claim Your Calling</span>
+                        <span class="text-brandGold">✦</span>
+                    </div>
+                </div>
+
+                <div class="p-10 md:p-14 space-y-8 flex flex-col justify-between hover:bg-brandIvory/35 transition duration-500 group">
+                    <div class="space-y-6">
+                        <div class="text-brandGold text-5xl md:text-6xl font-light tracking-wide serif-font">03.</div>
+                        <div class="space-y-2">
+                            <span class="text-brandGold tracking-widest text-[10px] uppercase font-bold block">Third Anchor</span>
+                            <h4 class="text-2xl text-brandBrown uppercase tracking-wider">Refinement</h4>
+                        </div>
+                        <p class="text-brandBrown/70 leading-relaxed text-sm">
+                            Carry yourself with grace, self-control, and intentionality in every space you enter, reflecting biblical femininity.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-brandTaupe/20 flex items-center justify-between text-brandBrown group-hover:text-brandGold transition">
+                        <span class="text-xs uppercase tracking-widest font-medium">Embody Elegance</span>
+                        <span class="text-brandGold">◈</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: THE FRAMEWORK OF REFINEMENT -->
+    <section id="framework" class="py-32 px-6 bg-brandTaupe/20">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-24 space-y-4">
+                <span class="text-brandGold tracking-[0.4em] uppercase text-xs block">The Pathway to Becoming</span>
+                <h2 class="text-4xl md:text-6xl text-brandBrown leading-tight">The Framework of Refinement</h2>
+                <p class="text-brandBrown/60 max-w-xl mx-auto text-sm leading-relaxed">
+                    This journey is structured, intentional, and spirit-led. We do not rush the process; we build a life of devotion one step at a time.
+                </p>
+            </div>
+
+            <div class="space-y-12">
+                
+                <div class="grid md:grid-cols-12 gap-6 md:gap-12 pb-10 border-b border-brandTaupe/40 items-start">
+                    <div class="md:col-span-1 text-brandGold text-3xl font-light tracking-wide serif-font">I.</div>
+                    <div class="md:col-span-4">
+                        <h4 class="text-2xl text-brandBrown tracking-wide font-normal">Sacred Stillness</h4>
+                        <span class="text-brandGold tracking-widest text-[10px] uppercase font-bold mt-1 block">The Quiet Heart</span>
+                    </div>
+                    <div class="md:col-span-7">
+                        <p class="text-brandBrown/70 leading-relaxed text-sm">
+                            A tender pause to step away from the world's clamor and rest deeply in His presence. Here, we invite a soft, receptive spirit, quietening the mind and anchoring the soul in divine peace.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-6 md:gap-12 pb-10 border-b border-brandTaupe/40 items-start">
+                    <div class="md:col-span-1 text-brandGold text-3xl font-light tracking-wide serif-font">II.</div>
+                    <div class="md:col-span-4">
+                        <h4 class="text-2xl text-brandBrown tracking-wide font-normal">Grace-Led Unveiling</h4>
+                        <span class="text-brandGold tracking-widest text-[10px] uppercase font-bold mt-1 block">Heart Restoration</span>
+                    </div>
+                    <div class="md:col-span-7">
+                        <p class="text-brandBrown/70 leading-relaxed text-sm">
+                            Gently examining our lives under the loving light of grace. Together, we identify and release any lingering weights, choosing instead to plant seeds of truth, purity, and your authentic identity in Christ.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-6 md:gap-12 pb-10 border-b border-brandTaupe/40 items-start">
+                    <div class="md:col-span-1 text-brandGold text-3xl font-light tracking-wide serif-font">III.</div>
+                    <div class="md:col-span-4">
+                        <h4 class="text-2xl text-brandBrown tracking-wide font-normal">Heavenly Poise</h4>
+                        <span class="text-brandGold tracking-widest text-[10px] uppercase font-bold mt-1 block">Feminine Radiance</span>
+                    </div>
+                    <div class="md:col-span-7">
+                        <p class="text-brandBrown/70 leading-relaxed text-sm">
+                            Embracing the quiet strength of biblical softness, elegant self-possession, and thoughtful speech. Walking gracefully in every room, carrying a warmth that naturally commands respect.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-6 md:gap-12 pb-10 border-b border-brandTaupe/40 items-start">
+                    <div class="md:col-span-1 text-brandGold text-3xl font-light tracking-wide serif-font">IV.</div>
+                    <div class="md:col-span-4">
+                        <h4 class="text-2xl text-brandBrown tracking-wide font-normal">Beautiful Sanctuary</h4>
+                        <span class="text-brandGold tracking-widest text-[10px] uppercase font-bold mt-1 block">The Sweet Legacy</span>
+                    </div>
+                    <div class="md:col-span-7">
+                        <p class="text-brandBrown/70 leading-relaxed text-sm">
+                            Creating atmospheres of order, peace, and spiritual beauty within your home and daily habits. Weaving gentle discipline into a lifestyle that leaves a fragrant legacy for generations.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-28 bg-white p-10 md:p-16 border border-brandTaupe/40 rounded-3xl shadow-sm">
+                <div class="text-center mb-12 space-y-2">
+                    <span class="text-brandGold tracking-[0.2em] uppercase text-xs font-semibold">The Ultimate Fruit</span>
+                    <h3 class="text-2xl md:text-3xl text-brandBrown serif-font leading-relaxed max-w-2xl mx-auto">
+                        Bold yet Beautiful. Powerful yet Poise.<br class="hidden md:inline"> Fierce yet Feminine.
+                    </h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+                    <div class="space-y-2">
+                        <div class="text-brandGold text-xl">♦</div>
+                        <h5 class="text-md text-brandBrown font-bold tracking-wider uppercase">Graceful Strength</h5>
+                        <p class="text-xs text-brandBrown/70 leading-relaxed">Walking in unwavering spiritual authority and divine confidence while resting completely in soft, biblical elegance.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-brandGold text-xl">✦</div>
+                        <h5 class="text-md text-brandBrown font-bold tracking-wider uppercase">Minds Renewed</h5>
+                        <p class="text-xs text-brandBrown/70 leading-relaxed">Unshaken security in your divine identity as God's chosen daughter.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-brandGold text-xl">◈</div>
+                        <h5 class="text-md text-brandBrown font-bold tracking-wider uppercase">Elegance Revived</h5>
+                        <p class="text-xs text-brandBrown/70 leading-relaxed">Carrying grace, high standards, and poise in every sphere you enter.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-brandGold text-xl">❋</div>
+                        <h5 class="text-md text-brandBrown font-bold tracking-wider uppercase">Chains Overthrown</h5>
+                        <p class="text-xs text-brandBrown/70 leading-relaxed">Old survival mechanisms replaced by structural Kingdom authority.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- THE FEATURED BLUEPRINT SECTION -->
+    <section id="blueprint" class="py-32 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1">
+                <div class="relative">
+                    <div class="aspect-[2/3] bg-brandBeige rounded-2xl overflow-hidden shadow-2xl max-w-sm mx-auto border-4 border-brandTaupe/20">
+                        <img src="https://i.postimg.cc/7LzmJSLg/image0-(1).png" alt="Becoming Her Blueprint Cover" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-brandGold/10 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 space-y-8">
+                <h2 class="text-4xl md:text-6xl text-brandBrown leading-tight">Becoming Her: <br><i class="italic text-brandGold/80">The Godly Lady Blueprint</i></h2>
+                <p class="text-lg text-brandBrown/70 leading-relaxed">
+                    A transformational guide designed to help you strengthen your relationship with God, develop discipline, and walk confidently in your identity.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start space-x-4">
+                        <span class="text-brandGold mt-1">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        </span>
+                        <span class="text-brandBrown/80">Build consistency in your spiritual life through prayer and scripture.</span>
+                    </li>
+                    <li class="flex items-start space-x-4">
+                        <span class="text-brandGold mt-1">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        </span>
+                        <span class="text-brandBrown/80">Gain clarity in your identity as a chosen daughter.</span>
+                    </li>
+                    <li class="flex items-start space-x-4">
+                        <span class="text-brandGold mt-1">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        </span>
+                        <span class="text-brandBrown/80">Develop habits of discipline and refined conduct.</span>
+                    </li>
+                </ul>
+                <div class="pt-6">
+                    <a href="https://kieonaantoinette.myflodesk.com/p6ovw1ensq" target="_blank" rel="noopener noreferrer" class="inline-block w-full sm:w-auto bg-brandBrown text-brandIvory px-10 py-5 rounded-full text-sm tracking-[0.2em] uppercase hover:bg-brandCharcoal transition btn-shadow text-center">
+                        Get Your Free E-Guide
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INVITATION (EMOTIONAL CLOSE) -->
+    <section class="py-32 bg-brandBrown text-brandIvory px-6 text-center">
+        <div class="max-w-4xl mx-auto space-y-10">
+            <div class="space-y-4">
+                <p class="text-brandGold/80 tracking-[0.3em] uppercase text-xs">A Sacred Call</p>
+                <h2 class="text-4xl md:text-6xl italic leading-tight serif-font">You feel the call to go deeper. <br>You know you are meant for more.</h2>
+            </div>
+            <p class="text-brandTaupe text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto font-light">
+                God is inviting you into a higher level of intimacy, identity, and transformation. This is your moment to stop watching and start becoming.
+            </p>
+        </div>
+    </section>
+
+    <!-- STAY CONNECTED & SOCIALS -->
+    <section id="connect" class="py-24 px-6 bg-brandBeige/40">
+        <div class="max-w-3xl mx-auto bg-white p-12 md:p-20 rounded-[3rem] shadow-2xl text-center relative overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-32 h-32 bg-brandGold/5 rounded-full"></div>
+            <div class="relative z-10 space-y-8">
+                <h2 class="text-4xl text-brandBrown">Stay Connected</h2>
+                <p class="text-brandBrown/70 leading-relaxed max-w-xl mx-auto">
+                    Connect with me across my social spaces for daily devotion, encouragement, and a life of refinement.
+                </p>
+                
+                <div class="flex flex-wrap justify-center items-center gap-6 pt-4">
+                    <a href="https://www.tiktok.com/@kieonaantoinette?_r=1&_t=ZP-96TT3fgEnvz" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-brandIvory border border-brandTaupe/40 flex items-center justify-center text-brandBrown hover:text-brandGold hover:border-brandGold hover:bg-white transition-all duration-300 shadow-sm" aria-label="TikTok">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.97 1.18 2.32 1.99 3.82 2.27V10.3c-1.72-.07-3.39-.73-4.73-1.83v7.4c.03 2.14-1.01 4.19-2.79 5.4-1.78 1.2-4.11 1.4-6.08.52-1.97-.87-3.37-2.76-3.66-4.9-.4-2.88 1.46-5.63 4.31-6.38.74-.19 1.51-.24 2.27-.14v3.91c-.59-.19-1.24-.13-1.79.16-.86.41-1.39 1.34-1.31 2.29.07.96.79 1.77 1.74 1.93.96.16 1.95-.36 2.34-1.24.16-.36.23-.76.22-1.16V0h3.53z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@kieonaantoinette" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-brandIvory border border-brandTaupe/40 flex items-center justify-center text-brandBrown hover:text-brandGold hover:border-brandGold hover:bg-white transition-all duration-300 shadow-sm" aria-label="YouTube">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.52 3.5 12 3.5 12 3.5s-7.52 0-9.388.555a3.002 3.002 0 0 0-2.11 2.108C0 8.03 0 12 0 12s0 3.97.502 5.837a3.003 3.003 0 0 0 2.11 2.108C4.48 20.5 12 20.5 12 20.5s7.52 0 9.388-.555a3.003 3.003 0 0 0 2.11-2.108C24 15.97 24 12 24 12s0-3.97-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/kieonaantoinette/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-brandIvory border border-brandTaupe/40 flex items-center justify-center text-brandBrown hover:text-brandGold hover:border-brandGold hover:bg-white transition-all duration-300 shadow-sm" aria-label="Instagram">
+                        <svg class="w-6 h-6 stroke-current stroke-2 fill-none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/KieonaAntoinette1" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-brandIvory border border-brandTaupe/40 flex items-center justify-center text-brandBrown hover:text-brandGold hover:border-brandGold hover:bg-white transition-all duration-300 shadow-sm" aria-label="Facebook">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandIvory pt-24 pb-12 px-6 border-t border-brandTaupe/20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2 space-y-6">
+                <div class="text-2xl tracking-widest uppercase font-light text-brandBrown serif-font">
+                    Kieona <span class="font-bold">Antoinette</span>
+                </div>
+                <p class="text-brandGold italic serif-font text-lg">A Ministry for Kingdom Women</p>
+                <p class="text-brandBrown/60 max-w-sm text-sm leading-loose">
+                    Helping women grow in intimacy with God, walk in identity, and embody biblical femininity through grace and refinement.
+                </p>
+            </div>
+            <div>
+                <h6 class="text-brandBrown uppercase tracking-widest text-xs font-bold mb-6">Navigation</h6>
+                <ul class="space-y-4 text-sm text-brandBrown/70">
+                    <li><a href="#" class="hover:text-brandGold transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-brandGold transition">About</a></li>
+                    <li><a href="#pillars" class="hover:text-brandGold transition">The Pillars</a></li>
+                    <li><a href="#framework" class="hover:text-brandGold transition">The Framework</a></li>
+                    <li><a href="#blueprint" class="hover:text-brandGold transition">The Blueprint</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-brandBrown uppercase tracking-widest text-xs font-bold mb-6">Connect</h6>
+                <ul class="space-y-4 text-sm text-brandBrown/70">
+                    <li><a href="https://www.instagram.com/kieonaantoinette/" target="_blank" rel="noopener noreferrer" class="hover:text-brandGold transition">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@kieonaantoinette" target="_blank" rel="noopener noreferrer" class="hover:text-brandGold transition">YouTube</a></li>
+                    <li><a href="#" class="hover:text-brandGold transition">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-brandTaupe/20 pt-8 flex flex-col md:row justify-between items-center space-y-4 md:space-y-0 text-[10px] uppercase tracking-widest text-brandBrown/40">
+            <p>&copy; 2024 Kieona Antoinette. All Rights Reserved.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-brandGold transition">Privacy Policy</a>
+                <a href="#" class="hover:text-brandGold transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
